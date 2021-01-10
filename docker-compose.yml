@@ -74,3 +74,9 @@ services:
       - zookeeper1
       - zookeeper2
       - zookeeper3
+
+  message_producer:
+    build: 
+      context: ./MessageProducer
+    depends_on: 
+      - kafka1
